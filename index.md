@@ -1,8 +1,15 @@
 ## Introdução a PHP e Programação Orientada a Objetos
 
-You can use the [editor on GitHub](https://github.com/heberthreinstein/phpPOO/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Arquivo PHP
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+O código PHP fica armazenado em um arquivo com a extensão ".php".
+Dentro desse arquivos presisamos demarcar os limites do codigo PHP utilizando as tags `<?php` para demarcar o inicio e `?>` para o final.
+
+```
+<?php
+Seu código vai aqui.
+?>
+```
 
 ### Markdown
 
