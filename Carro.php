@@ -23,7 +23,11 @@ class Carro {
     }
 
     function abastecer($litros){
-        $this->combustivel += $litros;
+        if (($this->combustivel + $litros) > $this->capacidade) {
+           $this->combustivel = $this->capacidade;
+        } else {
+            $this->combustivel += $litros;
+        }
     }
 }
 ?>
