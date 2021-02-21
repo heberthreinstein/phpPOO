@@ -7,7 +7,7 @@ Dentro desse arquivos presisamos demarcar os limites do codigo PHP utilizando as
 
 ```
 <?php
-  Seu código vai aqui.
+  #Seu código vai aqui.
 ?>
 ```
 
@@ -19,13 +19,13 @@ Ao declarar um váriavel em PHP não é necessario a declaração de seu tipo.
 
 ```
 <?php
-  //Declaração de variavel sem valor.
+  # Declaração de variavel sem valor.
   $variavel;
   
-  //Declaração de variavel atribuindo um valor.
-  // Automaticamente a variavel vai entender que é do tipo inteiro.
+  # Declaração de variavel atribuindo um valor.
+  # Automaticamente a variavel vai entender que é do tipo inteiro.
   $variavel2 = 1
-  // Automaticamente a variavel vai enteder que é do tipo inteiro.
+  # Automaticamente a variavel vai enteder que é do tipo inteiro.
   $variavel3
 ?>
 
@@ -38,9 +38,9 @@ Todo nome de classe deve começar com a primeira letra maiuscula e ter o mesmo n
 
 ```
 <?php
-  //Declaração da classe Carro.
+  # Declaração da classe Carro.
   class Carro {
-    //Código da classe vai aqui.
+    # Código da classe vai aqui.
   }
 ?>
 
