@@ -7,13 +7,44 @@ Dentro desse arquivos presisamos demarcar os limites do codigo PHP utilizando as
 
 ```
 <?php
-Seu código vai aqui.
+  Seu código vai aqui.
 ?>
 ```
 
-### Markdown
+### Variaveis em PHP
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As variaveis em PHP são demarcar pelo simbolo '$'.
+Todas as variáveis devem começar com este simbolo.
+Ao declarar um váriavel em PHP não é necessario a declaração de seu tipo.
+
+```
+<?php
+  //Declaração de variavel sem valor.
+  $variavel;
+  
+  //Declaração de variavel atribuindo um valor.
+  // Automaticamente a variavel vai entender que é do tipo inteiro.
+  $variavel2 = 1
+  // Automaticamente a variavel vai enteder que é do tipo inteiro.
+  $variavel3
+?>
+
+```
+
+### Classes
+
+Para declara um classe em PHP utilizando a palavra reservada `class` acompanhada do nome da classe e chaves de abertura e fechamento.
+Todo nome de classe deve começar com a primeira letra maiuscula e ter o mesmo nome do arquivo.
+
+```
+<?php
+  //Declaração da classe Carro.
+  class Carro {
+    //Código da classe vai aqui.
+  }
+?>
+
+```
 
 ```markdown
 Syntax highlighted code block
