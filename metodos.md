@@ -3,11 +3,11 @@ title: "Implementando Metodos"
 permalink: /metodos/
 
 
-### Implementando métodos
+# Implementando métodos
 
 ## Acessando atributos
 Para acessarmos um atributo em um classe utilizamos o simbolo `->`.
-Ele é utilizado após a instancia da classe no seguinte formato `$classe->atributo`.
+Ele é utilizado após a instancia da classe no seguinte formato:   `$classe->atributo`.
 Neste caso com ainda estamos dentro da própia classe utilizamos a palavra reservado `$this` que basicamente serve para referenciar para os atributos da classe que está sendo implementada.
 
 ```php
@@ -23,7 +23,7 @@ Neste caso com ainda estamos dentro da própia classe utilizamos a palavra reser
 ?>
 ```
 
-# Implementando os métodos
+### Implementando os métodos
 O método andar irá alterar o atributo andando para verdadeiro e irá repetir um laço até q esse atributo se torne falso. Dentro deste laço de repitição a cada 1 segundo é adicionado 1km a kilometragem do carro e retirada 0.1 de combustivel.
 Já no método parar somente alteraramos o valor de andando para falso.
 
