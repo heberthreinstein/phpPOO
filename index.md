@@ -28,7 +28,6 @@ Ao declarar um váriavel em PHP não é necessario a declaração de seu tipo.
   // Automaticamente a variavel vai entender que é do tipo string.
   $variavel3 = 'frase'
 ?>
-
 ```
 
 ## Classes
@@ -43,7 +42,6 @@ Todo nome de classe deve começar com a primeira letra maiuscula e ter o mesmo n
     // Código da classe vai aqui.
   }
 ?>
-
 ```
 ### Atributos
 
@@ -69,7 +67,6 @@ Objeto: Classe existente na aplicação.
     public int $combustivel;
   }
 ?>
-
 ```
 ### Atributos
 Métodos são como funções e sua declaração também não é diferente.
@@ -100,3 +97,4 @@ Em php a palavra reservada `function` é utilizada para marcar uma função ou m
     }
   }
 ?>
+```
