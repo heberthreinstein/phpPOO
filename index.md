@@ -61,10 +61,18 @@ Objeto: Classe existente na aplicação.
   // Declaração da classe Carro.
   class Carro {
     
-    // Declaração dos atributos todos são do tipo inteiro
+    // Declaração dos atributos do tipo inteiro
     public int $capacidade;
     public int $kilometragem;
-    public int $combustivel;
+
+    // Combustivel será do tipo float
+    public float $combustivel;
+
+    // Andando sempre iniciará como falso então 
+    //já atribuimos o valor aqui.
+    // Percebe-se que não precisamos declarar o 
+    //tipo, pois ele já assume baseado no valor atribuido.
+    public $andando = false;
   }
 ?>
 ```
@@ -77,7 +85,7 @@ Em php a palavra reservada `function` é utilizada para marcar uma função ou m
   // Declaração da classe Carro.
   class Carro {
     
-    // Declaração dos atributos todos são do tipo inteiro.
+    // Declaração dos atributos do tipo inteiro.
     public int $capacidade;
     public int $kilometragem;
     public int $combustivel;
@@ -91,7 +99,11 @@ Em php a palavra reservada `function` é utilizada para marcar uma função ou m
       //Codigo da função aqui.
     }
 
-    //Método abastecer espera um parametro litros que será usado para saber a quantia a colocar no carro.
+    //Método abastecer espera um parametro litros
+    //que será usado para saber a quantia a colocar 
+    //no carro.
+    //Litros não tem uma declaração de tipo 
+    //especifico pois é uma variavel.
     public function abastecer($litros){
       //Codigo da função aqui.
     }
