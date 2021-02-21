@@ -25,8 +25,8 @@ Ao declarar um váriavel em PHP não é necessario a declaração de seu tipo.
   // Declaração de variavel atribuindo um valor.
   // Automaticamente a variavel vai entender que é do tipo inteiro.
   $variavel2 = 1
-  // Automaticamente a variavel vai enteder que é do tipo inteiro.
-  $variavel3
+  // Automaticamente a variavel vai entender que é do tipo string.
+  $variavel3 = 'frase'
 ?>
 
 ```
@@ -51,11 +51,11 @@ A declaração de atributos é feita da mesmo forma que a declaração de variá
 Em PHP a declaração para a declaração de atributos é requisitado um tipo para esse atributo e um modificador de acesso que controla o acesso a essa váriavel neste caso vamos utilizar `public` que não tem restrições.
 
 As variaveis em PHP podem ser dos seguintes tipos:
-String: `string`
-Inteiro: `int`
-Float ou double: `float`
-Booleano: `bool`
-Array: `array`
+String: `string`  
+Inteiro: `int`  
+Float ou double: `float`  
+Booleano: `bool`  
+Array: `array`  
 Objeto: Classe existente na aplicação.
 
 ```php
@@ -71,32 +71,32 @@ Objeto: Classe existente na aplicação.
 ?>
 
 ```
+### Atributos
+Métodos são como funções e sua declaração também não é diferente.
+Em php a palavra reservada `function` é utilizada para marcar uma função ou metódo.
 
+```php
+<?php
+  // Declaração da classe Carro.
+  class Carro {
+    
+    // Declaração dos atributos todos são do tipo inteiro.
+    public int $capacidade;
+    public int $kilometragem;
+    public int $combustivel;
 
-```markdown
-Syntax highlighted code block
+    // Declaração das funções.
+    public function andar(){
+      //Codigo da função aqui.
+    }
 
-# Header 1
-## Header 2
-### Header 3
+    public function parar(){
+      //Codigo da função aqui.
+    }
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/heberthreinstein/phpPOO/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+    //Método abastecer espera um parametro litros que será usado para saber a quantia a colocar no carro.
+    public function abastecer($litros){
+      //Codigo da função aqui.
+    }
+  }
+?>
