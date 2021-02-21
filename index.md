@@ -1,8 +1,8 @@
-# Introdução a PHP e Programação Orientada a Objetos
+# Introdução a Programação Orientada a Objetos em PHP
 
 ## Arquivo PHP
 
-O código PHP fica armazenado em um arquivo com a extensão ".php".
+O código PHP fica armazenado em um arquivo com a extensão `.php`.
 Dentro desse arquivos presisamos demarcar os limites do codigo PHP utilizando as tags `<?php` para demarcar o inicio e `?>` para o final.
 
 ```php
@@ -13,7 +13,7 @@ Dentro desse arquivos presisamos demarcar os limites do codigo PHP utilizando as
 
 ## Variaveis em PHP
 
-As variaveis em PHP são demarcar pelo simbolo '$'.
+As variaveis em PHP são demarcar pelo simbolo `$`.
 Todas as variáveis devem começar com este simbolo.
 Ao declarar um váriavel em PHP não é necessario a declaração de seu tipo.
 
@@ -48,7 +48,7 @@ Todo nome de classe deve começar com a primeira letra maiuscula e ter o mesmo n
 A declaração de atributos é feita da mesmo forma que a declaração de variáveis, a diferença sendo que elas ficam dentro da classe.
 Em PHP a declaração para a declaração de atributos é requisitado um tipo para esse atributo e um modificador de acesso que controla o acesso a essa váriavel neste caso vamos utilizar `public` que não tem restrições.
 
-As variaveis em PHP podem ser dos seguintes tipos:
+As variaveis em PHP podem ser dos seguintes tipos:  
 String: `string`  
 Inteiro: `int`  
 Float ou double: `float`  
@@ -68,7 +68,7 @@ Objeto: Classe existente na aplicação.
   }
 ?>
 ```
-### Atributos
+### Métodos
 Métodos são como funções e sua declaração também não é diferente.
 Em php a palavra reservada `function` é utilizada para marcar uma função ou metódo.
 
