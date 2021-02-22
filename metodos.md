@@ -50,28 +50,26 @@ Ele é reconhecido pela linguagem pelo nome `__construct`. Caso este método nã
 ```
 
 ### Andar
-O método andar irá alterar o atributo andando para verdadeiro e irá repetir um laço até q esse atributo se torne falso. Dentro deste laço de repitição a cada 1 segundo é adicionado 1km a kilometragem do carro e retirada 0.1 de combustivel.
-Já no método parar somente alteraramos o valor de andando para falso.
+O método andar irá somar o valor recebido a kilometragem atual do carro e irá calcular o consumo do combustivel e subtrair do tanque.
 
 ```php
 <?php
-    function andar() {
+    function andar($km) {
     
-        //Adicionamos 1km a kilometragem do carro
-        $this->kilometragem++;
+        //Somamos os km recebidos a kilometragem do carro
+        $this->kilometragem += $km;
 
-        //Retiramos 0.1 litros de combustivel
-        $this->combustivel -= 0.1;
+        //Multiplicamos os km recebido por 0.1 e subtraimos do 
+        //combustivel do carro
+        $this->combustivel -= 0.1*$km;
 
         // Mostra na tela a Kilometragem atual e o combustivel
-        print 'Kilometragem:' . $this->kilometragem .
-            ' Combustivel:'.  $this->combustivel .
-            '<br>'; 
+        print 'Kilometragem:' . $this->kilometragem . ' Combustivel:'.  $this->combustivel . '<br>'; 
     }
 ?>
 ```
 
-## Abastecer
+### Abastecer
 O método abastecer iremos verificar se a quantidade total de combustivel não irá ultrapassar a quantidade máxima, se sim deixamos o tanque cheio, se não somamos a quantidade ao cobustivel atual
 
 
