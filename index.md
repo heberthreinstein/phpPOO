@@ -5,11 +5,16 @@
 ### Segue abaixo os links para as páginas
 
   
-[PHP Orientadoa a objetos Básico](basico.md)
 
-[HTML Basico](html.md)
 
-[Instanciando a classe](classe.md)
+-> [PHP Orientadoa a objetos Básico](basico.md)
+
+-> [HTML Basico](html.md)
+
+-> [Instanciando a classe](classe.md)
+
+-> [JavaScript](classe.md)
+
 
 
 
