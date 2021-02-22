@@ -1,10 +1,15 @@
 # Introdução a Programação Orientada a Objetos em PHP
 
-# [PHP Orientadoa a objetos Básico](basico.md)
+### Esta página contém toda a explicação detalhada sobre o código.
 
-# [HTML Basico](html.md)
+### Segue abaixo os links para as páginas
 
-# [Instanciando a classe](classe.md)
+  
+[PHP Orientadoa a objetos Básico](basico.md)
+
+[HTML Basico](html.md)
+
+[Instanciando a classe](classe.md)
 
 
 
