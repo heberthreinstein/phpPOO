@@ -95,10 +95,6 @@ Em php a palavra reservada `function` é utilizada para marcar uma função ou m
       //Codigo da função aqui.
     }
 
-    public function parar(){
-      //Codigo da função aqui.
-    }
-
     //Método abastecer espera um parametro litros
     //que será usado para saber a quantia a colocar 
     //no carro.

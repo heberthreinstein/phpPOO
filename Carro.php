@@ -4,23 +4,20 @@ class Carro {
     //Atributos
     public int $capacidade;
     public int $kilometragem;
-    public float $combustivel;
-    public $andando = false;
+    public float $combustivel = 0;
    
-    function andar() {
+    function __construct( $capacidade, $kilometragem ) {
+		$this->capacidade = $capacidade;
+		$this->kilometragem = $kilometragem;
+        print 'Kilometragem:' .$this->kilometragem.' Combustivel:'.$this->combustivel.'<br>'; 
+	}
 
-        $this->andando = true;
-
-        while ($this->andando) {
-            $this->kilometragem++;
-            $this->combustivel -= 0.1;
-            sleep(1);
-        }
+    function andar($km) {
+        $this->kilometragem += $km;
+        $this->combustivel -= 0.1*$km;
+        print 'Kilometragem:' .$this->kilometragem.' Combustivel:'.$this->combustivel.'<br>'; 
     }
 
-    function parar() {
-        $this->andando = false;
-    }
 
     function abastecer($litros){
         if (($this->combustivel + $litros) > $this->capacidade) {

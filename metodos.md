@@ -23,32 +23,55 @@ Neste caso com ainda estamos dentro da própia classe utilizamos a palavra reser
 ?>
 ```
 
-### Implementando os métodos
+## Implementando os métodos
+### Construtor
+O método construtor é um método muito importante pois é ele que vai instanciar(construir) a classe(objeto).  
+Neste método vamos atribuir todas as caracteristicas especificas para este objeto.
+Ele é reconhecido pela linguagem pelo nome `__construct`. Caso este método não exista não será possivel instanciar esta classe.
+
+
+```php
+<?php
+    //Método construtor recebe dois parametros
+    //Estes parametros são as caracteriscas especificas
+    //deste objeto que vai ser criado.
+    function __construct( $capacidade, $kilometragem ) {
+        
+        //Dentro do método simplemeste precisamos atribuir
+        //estes valores a seus respctivos atributos.
+        $this->capacidade = $capacidade;
+        $this->kilometragem = $kilometragem;
+
+        //Aproveitamos para mostrar na tela o objeto que esta
+        //sendo criado.
+        print 'Kilometragem:' .$this->kilometragem.' Combustivel:'.$this->combustivel.'<br>'; 
+    }
+?>
+```
+
+### Andar
 O método andar irá alterar o atributo andando para verdadeiro e irá repetir um laço até q esse atributo se torne falso. Dentro deste laço de repitição a cada 1 segundo é adicionado 1km a kilometragem do carro e retirada 0.1 de combustivel.
 Já no método parar somente alteraramos o valor de andando para falso.
 
 ```php
 <?php
     function andar() {
-        //Setamos o atributo andando para verdadeiro
-        $this->andando = true;
+    
+        //Adicionamos 1km a kilometragem do carro
+        $this->kilometragem++;
 
-        //Repetimos até o atributo andando se torne falso
-        while ($this->andando) {
-            //Adicionamos 1km a kilometragem do carro
-            $this->kilometragem++;
-            //Retiramos 0.1 litros de combustivel
-            $this->combustivel -= 0.1;
-            //Aguarda 1 segundo para repetiver novamente
-            sleep(1);
-        }
-    }
+        //Retiramos 0.1 litros de combustivel
+        $this->combustivel -= 0.1;
 
-    function parar() {
-        $this->andando = false;
+        // Mostra na tela a Kilometragem atual e o combustivel
+        print 'Kilometragem:' . $this->kilometragem .
+            ' Combustivel:'.  $this->combustivel .
+            '<br>'; 
     }
 ?>
 ```
+
+## Abastecer
 O método abastecer iremos verificar se a quantidade total de combustivel não irá ultrapassar a quantidade máxima, se sim deixamos o tanque cheio, se não somamos a quantidade ao cobustivel atual
 
 
