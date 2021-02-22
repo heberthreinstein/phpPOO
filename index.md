@@ -76,7 +76,26 @@ Objeto: Classe existente na aplicação.
   }
 ?>
 ```
-### Métodos
+
+
+## Acessando atributos
+Para acessarmos um atributo em um classe utilizamos o simbolo `->`.
+Ele é utilizado após a instancia da classe no seguinte formato:   `$classe->atributo`.
+Neste caso com ainda estamos dentro da própia classe utilizamos a palavra reservado `$this` que basicamente serve para referenciar para os atributos da classe que está sendo implementada.
+
+```php
+<?php
+    //Assim podemos acessar o atributo
+    //igualmente a uma variavel qualquer
+    
+    //Altera o valor
+    $this->atributo = 'valor';
+
+    //Imprimir seu valor
+    print $this->atributo;
+?>
+```
+## Métodos
 Métodos são como funções e sua declaração também não é diferente.
 Em php a palavra reservada `function` é utilizada para marcar uma função ou metódo.
 
@@ -108,27 +127,7 @@ Em php a palavra reservada `function` é utilizada para marcar uma função ou m
 ```
 
 
-# Implementando métodos
-
-## Acessando atributos
-Para acessarmos um atributo em um classe utilizamos o simbolo `->`.
-Ele é utilizado após a instancia da classe no seguinte formato:   `$classe->atributo`.
-Neste caso com ainda estamos dentro da própia classe utilizamos a palavra reservado `$this` que basicamente serve para referenciar para os atributos da classe que está sendo implementada.
-
-```php
-<?php
-    //Assim podemos acessar o atributo
-    //igualmente a uma variavel qualquer
-    
-    //Altera o valor
-    $this->atributo = 'valor';
-
-    //Imprimir seu valor
-    print $this->atributo;
-?>
-```
-
-## Implementando os métodos
+### Implementando os métodos
 ### Construtor
 O método construtor é um método muito importante pois é ele que vai instanciar(construir) a classe(objeto).  
 Neste método vamos atribuir todas as caracteristicas especificas para este objeto.
@@ -195,12 +194,7 @@ O método abastecer iremos verificar se a quantidade total de combustivel não i
 ?>
 ```
 
-layout: page
-title: "HTML"
-permalink: /html/
-
-
-# HTML
+## HTML
 HTML é a linguagem de marcação utilizada para criação de paginas web.
 Todas as paginas são baseadas em HTML, você pode verificar ao utilizar o atalha ´ctrl+u´(Chrome) em qualquer pagina web que irá mostrar o codigo fonte daquela pagina.
 
@@ -252,4 +246,134 @@ Podemos utilizar as tags PHP dentro de uma página HTML também.
         </body>
     <\html>
 ```
+
+### Div
+
+A tag `<div>` cria uma divisão, serve para separar conteudos que devem ser tratados separadamente.
+No exemplo criamos duas divs e alteramos a cor do fundo utilizando o atributo style.
+Atributos são propiedades que podem ser adicionadas as tags html.
+
+```html
+ <div style="background-color: green">
+  Fundo Verde
+ </div>
+ <div style="background-color: yellow">
+  Fundo Amarelo
+ </div>
+```
+
+PRINT DIVS
+
+### h (headings)
+As tags `<h1>...<h6>` servem para a criação de titulos, a `<h1>` sendo o titulo maior e a `<h6>` menor.
+
+```html
+ <h1> Titulo Grande </h1>
+ <h3> Titulo Médio </h3>
+ <h6> Titulo Pequeno </h6>
+```
+
+PRINT TITULOS
+
+
+## Criando nossa página
+Nesta pagina iremos fazer duas divs uma para cada carro e colocar um titulo em cada
+
+```php
+<body>
+  <!-- Titulo para o carro 1 -->
+  <h1>Carro 1</h1>
+  <!-- div com o fundo verde -->
+  <div style="background-color: green">
+    <!-- carro 1 vai aqui -->
+  </div>
+  <!-- div com o fundo amarelo -->
+  <div style="background-color: yellow">
+      <!-- Titulo para o carro 2 -->
+      <!-- Este titulo esta dentro da div entao vai ficar com fundo amarelo também -->
+      <h1>Carro 2</h1>
+      <!-- carro 2 vai aqui -->
+  </div>
+</body>
+```
+
+### Instanciado a classe
+Vamos criar nosso primeiro carro, vamos importar a classe e chamar o metodo construtor passando as caracteristicas do nosso objetos.
+Para importar a classe em php usamos a palavra reservada `require` seguida do caminho para o arquivo da classe.
+Para chamar o construtor utilizamos a palavra reservada `new` seguida do nome da classe.
+
+```php
+<body>
+  <h1>Carro 1</h1>
+  <div style="background-color: green">
+    
+    
+    <?php //Abrimos a tag php
+      
+      //Importamos o arquivo que contem a classe
+      require "Carro.php";
+      
+      //Instanciamos o carro passando as caracteristicas
+      //capacidade de 50l e 15000km rodados
+      $c = new Carro(50,15000);
+    
+    //Fechando a tag php
+    ?>
+  </div>
+  
+  <div style="background-color: yellow">
+      <h1>Carro 2</h1>
+      
+      <?php 
+        //Mesmo procedimento para o carro dois
+        //somente estamos armazenando em uma
+        //variavel diferente e ele tem caracteristicas
+        //diferentes do carro 1.
+        $c2 = new Carro(30,0);
+      ?>
+  </div>
+</body>
+```
+
+## Chamando os metodos
+Vamos chamar os metodos utilizando nossos objetos instaciados, vamos utilizar o simbolo `->` para acessar os metodos do objeto.
+
+```php
+<?php
+    //chamamos o metodo abastecer para abastecermos o carro
+    $c->abastecer(50);
+    //chamamos o metodo andar para o carro andar tres vezes a distancia de 10km
+    $c->andar(10);
+    $c->andar(10);
+    $c->andar(10);
+?>
+
+<?php 
+    $c2 = new Carro(30,0);
+    //chamamos o metodo abastecer para abastecermos o carro 2
+    $c2->abastecer(30);
+    //chamamos o metodo andar para o carro andar tres vezes a distancia de 10km
+    $c2->andar(10);
+    $c2->andar(10);
+    $c2->andar(10);
+?>
+```
+
+
+# Provando que temos dois objetos
+Vamos pedir para o carro 1 andar novamente para que possamos perceber o que o carro 1 não perdeu seus dados por causa que criamos o carro 2.
+
+```php
+<!-- Criamos outra div para separar na tela -->
+<div style="background-color: green">
+    <!-- Adicionamos um titulo um pouco menor que os anteriores -->
+    <h3>Carro 1</h3>
+    <?php
+        //Chamamos o metodo andar novamente utilizando a variavel que esta o carro 1
+        $c->andar(10);
+    ?>
+</div>
+```
+
+
 
