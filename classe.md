@@ -1,7 +1,3 @@
-layout: page
-title: "Implementando Metodos"
-permalink: /metodos/
-
 
 # Instanciado a classe
 Vamos criar nosso primeiro carro, vamos importar a classe e chamar o metodo construtor passando as caracteristicas do nosso objetos.

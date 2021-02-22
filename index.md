@@ -13,7 +13,7 @@
 
 -> [Instanciando a classe](classe.md)
 
--> [JavaScript](classe.md)
+-> [JavaScript](javascript.md)
 
 
 

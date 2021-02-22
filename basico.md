@@ -1,6 +1,3 @@
-layout: page
-title: "HTML"
-permalink: /basico/
 
 # Basico PHP Orientado a Objetos
 

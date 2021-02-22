@@ -1,6 +1,3 @@
-layout: page
-title: "HTML"
-permalink: /html/
 
 ## HTML
 HTML é a linguagem de marcação utilizada para criação de paginas web.
