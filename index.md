@@ -7,7 +7,7 @@
   
 
 
--> [PHP Orientadoa a objetos Básico](basico.md)
+-> [PHP Orientado a objetos Básico](basico.md)
 
 -> [HTML Basico](html.md)
 

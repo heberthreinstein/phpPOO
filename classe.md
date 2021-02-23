@@ -1,6 +1,6 @@
 
 # Instanciado a classe
-Vamos criar nosso primeiro carro, vamos importar a classe e chamar o metodo construtor passando as caracteristicas do nosso objetos.
+Vamos criar nosso primeiro carro, vamos importar a classe e chamar o método construtor passando as características do nosso objetos.
 Para importar a classe em php usamos a palavra reservada `require` seguida do caminho para o arquivo da classe.
 Para chamar o construtor utilizamos a palavra reservada `new` seguida do nome da classe.
 
@@ -12,10 +12,10 @@ Para chamar o construtor utilizamos a palavra reservada `new` seguida do nome da
     
     <?php //Abrimos a tag php
       
-      //Importamos o arquivo que contem a classe
+      //Importamos o arquivo que contém a classe
       require "Carro.php";
       
-      //Instanciamos o carro passando as caracteristicas
+      //Instanciamos o carro passando as características
       //capacidade de 50l e 15000km rodados
       $c = new Carro(50,15000);
     
@@ -29,7 +29,7 @@ Para chamar o construtor utilizamos a palavra reservada `new` seguida do nome da
       <?php 
         //Mesmo procedimento para o carro dois
         //somente estamos armazenando em uma
-        //variavel diferente e ele tem caracteristicas
+        //variável diferente e ele tem características
         //diferentes do carro 1.
         $c2 = new Carro(30,0);
       ?>
@@ -37,14 +37,14 @@ Para chamar o construtor utilizamos a palavra reservada `new` seguida do nome da
 </body>
 ```
 
-## Chamando os metodos
-Vamos chamar os metodos utilizando nossos objetos instaciados, vamos utilizar o simbolo `->` para acessar os metodos do objeto.
+## Chamando os métodos
+Vamos chamar os métodos utilizando nossos objetos instanciados, vamos utilizar o símbolo `->` para acessar os métodos do objeto.
 
 ```php
 <?php
-    //chamamos o metodo abastecer para abastecermos o carro
+    //chamamos o método abastecer para abastecermos o carro
     $c->abastecer(50);
-    //chamamos o metodo andar para o carro andar tres vezes a distancia de 10km
+    //chamamos o método andar para o carro andar três vezes a distância de 10km
     $c->andar(10);
     $c->andar(10);
     $c->andar(10);
@@ -52,9 +52,9 @@ Vamos chamar os metodos utilizando nossos objetos instaciados, vamos utilizar o 
 
 <?php 
     $c2 = new Carro(30,0);
-    //chamamos o metodo abastecer para abastecermos o carro 2
+    //chamamos o método abastecer para abastecermos o carro 2
     $c2->abastecer(30);
-    //chamamos o metodo andar para o carro andar tres vezes a distancia de 10km
+    //chamamos o método andar para o carro andar três vezes a distância de 10km
     $c2->andar(10);
     $c2->andar(10);
     $c2->andar(10);
@@ -63,19 +63,20 @@ Vamos chamar os metodos utilizando nossos objetos instaciados, vamos utilizar o 
 
 
 ### Provando que temos dois objetos
-Vamos pedir para o carro 1 andar novamente para que possamos perceber o que o carro 1 não perdeu seus dados por causa que criamos o carro 2.
+Vamos pedir para o carro 1 andar novamente para que possamos perceber que o carro 1 não perdeu seus dados por causa que criamos o carro 2.
 
 ```php
 <!-- Criamos outra div para separar na tela -->
 <div style="background-color: green">
-    <!-- Adicionamos um titulo um pouco menor que os anteriores -->
+    <!-- Adicionamos um título um pouco menor que os anteriores -->
     <h3>Carro 1</h3>
     <?php
-        //Chamamos o metodo andar novamente utilizando a variavel que esta o carro 1
+        //Chamamos o método andar novamente utilizando a variável que está o carro 1
         $c->andar(10);
     ?>
 </div>
 ```
 
 ## [Proxima página -> JavaScript](javascript.md)
+
 
