@@ -70,13 +70,7 @@ Objeto: Classe existente na aplicação.
     public int $quilometragem;
 
     // Combustível será do tipo float
-    public float $combustivel;
-
-    // Andando sempre iniciará como falso então 
-    //já atribuímos o valor aqui.
-    // Percebe-se que não precisamos declarar o 
-    //tipo, pois ele já assume baseado no valor atribuído.
-    public $andando = false;
+    public float $combustivel = 0;
   }
 ?>
 ```
